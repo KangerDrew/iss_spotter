@@ -8,7 +8,7 @@ nextISSTimesForMyLocation((error, passTimes) => {
   for (const flyTime of passTimes) {
     let gmtTime = new Date(flyTime.risetime*1000).toGMTString();
     let seconds = flyTime.duration;
-    console.log(`Next pass at ${gmtTime} (Pacific Daylight Time) for ${seconds} seconds!`)
+    console.log(`Next pass at ${gmtTime} for ${seconds} seconds!`)
   }
 
 });
